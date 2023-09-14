@@ -85,3 +85,4 @@ jobs:
           args: --skip-existing *
   docs:
     uses: ./.github/workflows/docs.yml
+    needs: [macos, windows, linux]
