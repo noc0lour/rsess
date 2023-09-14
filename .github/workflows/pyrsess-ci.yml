@@ -1,4 +1,4 @@
-name: PyRSESS ci
+name: PyRSESS CI
 
 on:
   workflow_dispatch:
