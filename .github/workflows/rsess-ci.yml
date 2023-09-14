@@ -2,9 +2,13 @@ name: RSESS CI
 
 on:
   workflow_dispatch:
+  workflow_call:
+  push:
+    tags-ignore:
+      - v*
+  pull_request:
 
 jobs:
-
   matrix:
     name: ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
