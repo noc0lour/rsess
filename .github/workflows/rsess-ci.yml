@@ -5,6 +5,7 @@ on:
   workflow_call:
   push:
     branches:
+      - *
     tags-ignore:
       - v*
   pull_request:
