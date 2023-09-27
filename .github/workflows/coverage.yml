@@ -14,10 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
+        working-directory: ./pyrsess
         with:
           python-version: "3.10"
           cache: "pip"
-          working-directory: ./pyrsess
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
