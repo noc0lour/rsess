@@ -21,7 +21,10 @@ jobs:
           command: build
           args: --release --sdist -o dist --find-interpreter
           working-directory: ./pyrsess
-
+      - name: Test with pytest
+        run: |
+          pip install pytest
+          pytest --doctest-modules
   windows:
     runs-on: windows-latest
     defaults:
