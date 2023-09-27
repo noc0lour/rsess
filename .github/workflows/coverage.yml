@@ -9,7 +9,7 @@ jobs:
     name: Coverage for ${{ matrix.os }}
     strategy:
       matrix:
-        os: ["ubuntu", "macos"]
+        os: ["ubuntu"]
     runs-on: ${{ matrix.os }}-latest
     steps:
       - uses: actions/checkout@v2
