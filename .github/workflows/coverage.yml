@@ -49,6 +49,9 @@ jobs:
           cd ../
           cargo llvm-cov --no-run --lcov --output-path coverage.lcov
       - uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         with:
           files: coverage.lcov,coverage.xml
           name: ${{ matrix.os }}
+
