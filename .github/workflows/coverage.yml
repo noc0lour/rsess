@@ -33,7 +33,7 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-          pip install maturin pytest
+          pip install maturin pytest pytest-cov
       - name: Run coverage for RSESS & PyRSESS
         run: |
           source venv/bin/activate
